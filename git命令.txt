@@ -1,0 +1,37 @@
+Git命令
+
+git:各种信息
+git config:各种配置命令
+
+git config --global user.name "wang" :配置用户名
+git config --global user.email "wangzhaoning@tycmc.net" :配置邮箱
+
+git config user.name ：查看用户名
+git config user.email :查看邮箱
+
+mkdir mygit :创建文件名
+cd mygit
+pwd
+以上三句可以显示出所建文件的路径
+
+git init :初始化仓库（刚刚建立的）
+
+git log --stat :查看所有提交信息
+
+git add <file>
+git commit -m "注释"
+这两句添加文件，git add可一次性添加多个
+
+git status :查看仓库当前状态
+
+git diff <文件名> :查看修改内容
+
+git log ：显示最近到最远的提交日志
+git log --pretty=oneline ：合并显示，更清晰
+git reflog :显示每次的命令历史，得到ID号，从而实现回退
+
+cat <file>：查看文件内容
+
+git reset --hard HEAD^ :回退到上一个版本
+git reset --hard HEAD^^ :回退到上两个版本
+git reset --hard <commit id> :回退到ID号的版本
